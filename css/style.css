@@ -1,0 +1,226 @@
+/* Root elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-h: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    top: 0;
+    position: sticky;
+    /* justify-content: center; */
+}
+
+#logo {
+    margin: 10px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 10px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 70%;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    list-style: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home */
+
+#home {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    padding: 3px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/cover-photo-2560x1922.jpeg') no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 90%;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Services */
+
+#services {
+    margin: 4px;
+    display: flex;
+}
+
+#services .box {
+    border: 3px solid black;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: lightgray;
+    margin-bottom: 34px;
+}
+
+#services .box img {
+    border: 3px solid black;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+/* Client section */
+#clientsection::before {
+    content: "";
+    position: absolute;
+    background: url('../img/fastFoods1-1199461884-770x533-1.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 30%;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 50px;
+    width: 50px;
+}
+
+#clientitems {
+    padding: 34px;
+}
+
+#services-container {
+    margin: 21px;
+}
+#services-container p{
+    font-size: 1.2rem;
+}
+
+/* contact section */
+
+#contact {
+    height: 100px;
+}
+
+#contact::before {
+    display: flex;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 70%;
+    background: url('../img/cover-for-street-food-in-sydney.webp') no-repeat center center/cover;
+}
+
+#contactbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contactbox input,
+#contactbox textarea {
+    width: 100%;
+    padding: 9px 5px;
+}
+
+#contactbox label {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 9px 20px;
+    margin: 660px 0px;
+}
+
+/* Utility classes */
+
+.h-primary {
+    font-size: 3rem;
+    padding: 2px;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
